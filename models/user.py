@@ -1,11 +1,7 @@
-#!/usr/bin/python3
-"""Defines the User class."""
+from sqlalchemy import Column, String
+from sqlalchemy.orm import relationship
 from models.base_model import Base
 from models.base_model import BaseModel
-from sqlalchemy import Column
-from sqlalchemy import String
-from sqlalchemy.orm import relationship
-
 
 class User(BaseModel, Base):
     """Represents a user for a MySQL database.
